@@ -1,0 +1,20 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.4, pytest-8.4.2, pluggy-1.6.0 -- C:\Program Files\Python311\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\aitab\OneDrive\Desktop\data_extraction_service
+plugins: anyio-4.11.0, asyncio-1.2.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 10 items
+
+app/tests/test_edge_cases.py::test_start_with_invalid_token PASSED       [ 10%]
+app/tests/test_edge_cases.py::test_nonexistent_job_status PASSED         [ 20%]
+app/tests/test_edge_cases.py::test_access_result_for_incomplete_job PASSED [ 30%]
+app/tests/test_edge_cases.py::test_cancel_completed_job PASSED           [ 40%]
+app/tests/test_edge_cases.py::test_remove_nonexistent_job PASSED         [ 50%]
+app/tests/test_real.py::test_real_extraction_workflow PASSED             [ 60%]
+app/tests/test_seeded.py::test_list_all_jobs PASSED                      [ 70%]
+app/tests/test_seeded.py::test_get_statistics PASSED                     [ 80%]
+app/tests/test_seeded.py::test_get_seeded_completed_job_result PASSED    [ 90%]
+app/tests/test_seeded.py::test_health_check PASSED                       [100%]
+
+============================= 10 passed in 1.37s ==============================
